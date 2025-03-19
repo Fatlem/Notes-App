@@ -1,0 +1,124 @@
+body {
+    font-family: 'Itim', 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #b15977, #d3ebee, #587a9c);
+    color: white;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#note-form {
+    background: linear-gradient(to right, #587a9c, #b15977);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+}
+
+#notes-list {
+    background: linear-gradient(to right, #587a9c, #b15977);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+#notes-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+footer {
+    background: linear-gradient(to right, #2d2b30, #a453f0);
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    main {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    #note-form,
+    #notes-list {
+        padding: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    main {
+        grid-template-columns: 2fr 3fr;
+    }
+}
+
+header {
+    background: linear-gradient(to right, #2d2b30, #a453f0);
+    color: white;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
+
+nav {
+    display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    font-size: 1.25rem;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+}
+
+.social a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.social a:hover {
+    color: #3498db;
+}
+
+.social img {
+    width: 32px;
+    height: 32px;
+    margin-right: 1rem;
+}
